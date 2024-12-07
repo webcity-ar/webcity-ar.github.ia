@@ -1,14 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webcity</title>
-    <link rel="icon" type="png|image" href="/IMAGES/logoconfondo.png">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <title>WebCity - Creación de Páginas Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #35312B; /* Fondo del sitio */
+            color: white; /* Texto blanco para buen contraste */
+        }
+        header {
+            background: rgba(76, 175, 80, 0.8); /* Verde con transparencia */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .services, .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .services div, .contact div {
+            margin: 1rem 0;
+            max-width: 800px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <p> Hola santetas </p>
-</body> 
-</html> 
+
+<header>
+    <h1>Bienvenidos a WebCity</h1>
+    <p>¡Creamos páginas web profesionales que llevan tu negocio al siguiente nivel!</p>
+</header>
+
+<nav>
+    <a href="#about">Sobre Nosotros</a>
+    <a href="#services">Servicios</a>
+    <a href="#contact">Contacto</a>
+</nav>
+
+<section id="about">
+    <h2>Sobre WebCity</h2>
+    <p>En WebCity nos especializamos en diseñar y desarrollar sitios web atractivos, funcionales y adaptados a las necesidades de cada cliente. Nuestro objetivo es ayudarte a tener una presencia en línea impactante.</p>
+</section>
+
+<section id="services" class="services">
+    <h2>Servicios</h2>
+    <div>
+        <h3>Diseño Web</h3>
+        <p>Creación de sitios web personalizados con un diseño único y adaptado a tu marca.</p>
+    </div>
+    <div>
+        <h3>Desarrollo Web</h3>
+        <p>Programación de sitios funcionales, responsivos y optimizados para todos los dispositivos.</p>
+    </div>
+    <div>
+        <h3>Mantenimiento</h3>
+        <p>Soporte técnico y actualizaciones para mantener tu sitio siempre al día.</p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <div>
+        <p>Si estás interesado en nuestros servicios, no dudes en contactarnos:</p>
+        <p>Email: contacto@webcity.com</p>
+        <p>Teléfono: +57 123 456 7890</p>
+        <p>Ubicación: Medellín, Colombia</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 WebCity. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
