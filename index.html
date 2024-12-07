@@ -10,28 +10,36 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            background-color: #35312B; /* Fondo del sitio */
-            color: white; /* Texto blanco para buen contraste */
+            background-color: #35312B; 
+            color: white; 
         }
         header {
-            background: rgba(0, 128, 0, 0.8); /* Verde con transparencia */
+            background: rgba(0, 0, 0, 0.8); 
             color: white;
             padding: 1rem 0;
             text-align: center;
         }
-        nav {
+        header nav {
             display: flex;
             justify-content: center;
-            background: #333;
+            gap: 2rem;
+            margin-top: 1rem;
         }
-        nav a {
+        header nav a {
             color: white;
-            padding: 1rem;
             text-decoration: none;
+            font-size: 1.1rem;
+            padding: 0.5rem;
             transition: background 0.3s;
         }
-        nav a:hover {
+        header nav a:hover {
             background: #575757;
+            border-radius: 5px;
+        }
+        .company-info {
+            height: 600px; 
+            text-align: center;
+            padding-top: 200px; 
         }
         section {
             padding: 2rem;
@@ -46,8 +54,8 @@
         }
         #plans {
             display: flex;
-            justify-content: space-between; /* Espacio uniforme entre los planes */
-            gap: 1rem; /* Espaciado horizontal entre los planes */
+            justify-content: space-between;
+            gap: 1rem; 
             padding: 2rem;
         }
         #plans div {
@@ -55,7 +63,7 @@
             border: 1px solid #555;
             border-radius: 8px;
             padding: 1.5rem;
-            width: 30%; /* Cada plan ocupa un tercio del contenedor */
+            width: 30%; 
             text-align: center;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
         }
@@ -72,31 +80,32 @@
         }
         @media (max-width: 768px) {
             #plans {
-                flex-direction: column; /* Apilar los planes en pantallas pequeñas */
+                flex-direction: column;
                 align-items: center;
             }
             #plans div {
-                width: 90%; /* Los planes ocupan casi todo el ancho */
+                width: 90%; 
             }
+        }
+        #about, #contact {
+            padding: 4rem 2rem; 
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Bienvenidos a WebCity</h1>
-    <p>¡Tu Web, Nuestra Pasión!</p>
+    <nav>
+        <a href="#plans">Planes</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#contact">Contacto</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="#about">Sobre Nosotros</a>
-    <a href="#plans">Planes</a>
-    <a href="#contact">Contacto</a>
-</nav>
 
-<section id="about">
-    <h2>Sobre WebCity</h2>
-    <p>En WebCity nos especializamos en diseñar y desarrollar sitios web atractivos, funcionales y adaptados a las necesidades de cada cliente. Nuestro objetivo es ayudarte a tener una presencia en línea impactante.</p>
+<section class="company-info">
+
+    <h2>WebCity</h2>
 </section>
 
 <section id="plans">
@@ -142,6 +151,11 @@
             <li>✔ Mantenimiento: <strong>$40.000</strong> (12 veces/mes)</li>
         </ul>
     </div>
+</section>
+
+<section id="about">
+    <h2>Sobre WebCity</h2>
+    <p>En WebCity nos especializamos en diseñar y desarrollar sitios web atractivos, funcionales y adaptados a las necesidades de cada cliente. Nuestro objetivo es ayudarte a tener una presencia en línea impactante.</p>
 </section>
 
 <section id="contact">
