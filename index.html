@@ -1,184 +1,47 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebCity - Creación de Páginas Web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #35312B; /* Fondo del sitio */
-            color: white; /* Texto blanco para buen contraste */
-        }
-        header {
-            background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con transparencia */
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header nav {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 1rem;
-        }
-        header nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1rem;
-            padding: 0.5rem;
-            transition: background 0.3s;
-        }
-        header nav a:hover {
-            background: #575757;
-            border-radius: 5px;
-        }
-        .company-info {
-            height: 600px; /* Aumentar el tamaño del espacio entre header y planes */
-            text-align: center;
-            padding-top: 200px; /* Para centrar el contenido en el medio */
-        }
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-        #plans {
-            display: flex;
-            justify-content: center; /* Centra los planes en el contenedor */
-            padding: 2rem;
-            margin: 0;
-        }
-        #plans div {
-            background: #35312B;
-            border: 1px solid #555;
-            border-radius: 8px;
-            padding: 1.5rem;
-            width: 18%; /* Cada plan ocupa el 18% del contenedor */
-            text-align: center;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-            margin-right: 0; /* Eliminar el margen entre los elementos */
-            margin-left: 0;  /* Eliminar el margen entre los elementos */
-        }
-        #plans div:first-child {
-            margin-left: 0; /* Asegura que el primer plan no tenga margen izquierdo */
-        }
-        #plans div:last-child {
-            margin-right: 0; /* Asegura que el último plan no tenga margen derecho */
-        }
-        #plans h3 {
-            margin-bottom: 1rem;
-        }
-        #plans ul {
-            list-style: none;
-            padding: 0;
-            margin: 1rem 0;
-        }
-        #plans ul li {
-            margin: 0.5rem 0;
-        }
-        @media (max-width: 768px) {
-            #plans {
-                flex-direction: column; /* Apilar los planes en pantallas pequeñas */
-                align-items: center;
-            }
-            #plans div {
-                width: 90%; /* Los planes ocupan casi todo el ancho */
-                margin-left: 0;
-                margin-right: 0;
-            }
-        }
-        #about, #contact {
-            padding: 4rem 2rem; /* Aumentar el espacio entre Sobre Nosotros y Contacto */
-        }
-    </style>
-</head>
-<body>
+<html> 
+    <head> 
+        <meta charset="utf-8"> <!-- codificacion -->
+        <meta name="viewport" content="width=device-width"> <!-- Adapta el ancho del dispositivo con el ancho de la web (responsive web design) -->
+        <title>Webcity | Creamos, gestionamos y mantenemos paginas web</title>
+        <meta name="descripcion" content="Ofrecemos servicios de creacion, gestion, mantenimiento de paginas web con distintos planes para elegir"> 
 
-<header>
-    <nav>
-        <a href="#plans">Planes</a>
-        <a href="#about">Sobre Nosotros</a>
-        <a href="#contact">Contacto</a>
-    </nav>
-</header>
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#8FD694">
 
-<!-- Espacio para el nombre de la empresa -->
-<section class="company-info">
-    <!-- Aquí va el nombre de tu compañía y logo cuando lo tengas -->
-    <h2>WebCity</h2>
-</section>
+        <!-- OPEN GRAPH-->
+        <meta property="og:tittle" content="Webcity | Tener tu sitio web nunca fue tan facil">
+        <meta property="og:descripcion" content="Ofrecemos servicios de creacion, gestion, mantenimiento de paginas web con distintos planes para elegir">
+        <meta property="og:image" content="/IMAGES/Publi.png" />
+        <meta property="og:image:alt" content="Una fotografia de un par de mujeres explicando como hacer una pagina web"/>
 
-<section id="plans">
-    <div>
-        <h3 style="color: #4CAF50;">Plan Básico</h3>
-        <ul>
-            <li>✔ Hosting gratuito</li>
-            <li>✔ Configuración de dominio propio</li>
-            <li>✔ Web estática</li>
-            <li>✔ Creación de página: <strong>$35.000</strong></li>
-            <li>✔ Mantenimiento: <strong>$8.000</strong> (4 veces/mes)</li>
-        </ul>
-    </div>
-    <div>
-        <h3 style="color: #FFA726;">Plan Intermedio</h3>
-        <ul>
-            <li>✔ Hosting pago</li>
-            <li>✔ Personalización de emails automáticos</li>
-            <li>✔ Web dinámica</li>
-            <li>✔ Seguimiento con Google Analytics 4</li>
-            <li>✔ Personalización del SEO</li>
-            <li>✔ Medios de pago y envío (Andreani)</li>
-            <li>✔ Configuración de dominio propio</li>
-            <li>✔ Creación de página: <strong>$90.000</strong></li>
-            <li>✔ Mantenimiento: <strong>$20.000</strong> (8 veces/mes)</li>
-        </ul>
-    </div>
-    <div>
-        <h3 style="color: #F44336;">Plan Avanzado</h3>
-        <ul>
-            <li>✔ Hosting pago</li>
-            <li>✔ Web dinámica</li>
-            <li>✔ Configuración de dominio propio</li>
-            <li>✔ Personalización de emails automáticos</li>
-            <li>✔ Aplicaciones de dropshipping</li>
-            <li>✔ Diseño flexible (HTML, CSS, JS)</li>
-            <li>✔ Personalización del SEO</li>
-            <li>✔ Medios de pago y envío</li>
-            <li>✔ Verificación en dos pasos</li>
-            <li>✔ Seguimiento con Google Analytics 4</li>
-            <li>✔ Filtros, búsqueda y ordenación</li>
-            <li>✔ Creación de página: <strong>$140.000</strong></li>
-            <li>✔ Mantenimiento: <strong>$40.000</strong> (12 veces/mes)</li>
-        </ul>
-    </div>
-</section>
+        <link rel="alternate" href="https://webcity.com.ar/es" hreflang="en"> <!-- SEO para encontrar la misma pagina pero con otra traduccion -->
+        <link rel="canonical" href="https://webcity.com.ar"> <!-- www.webcity.com.ar o webcity.com.ar -->
 
-<section id="about">
-    <h2>Sobre WebCity</h2>
-    <p>En WebCity nos especializamos en diseñar y desarrollar sitios web atractivos, funcionales y adaptados a las necesidades de cada cliente. Nuestro objetivo es ayudarte a tener una presencia en línea impactante.</p>
-</section>
+        <link rel="icon" type="image/png" href="/IMAGES/logoconfondo.png">
+        
+        <style>
 
-<section id="contact">
-    <h2>Contacto</h2>
-    <p>Si estás interesado en nuestros servicios, no dudes en contactarnos:</p>
-    <p>Email: webcity.ar@gmail.com</p>
-    <p>Teléfono: +54-3416384936 / 3412159459</p>
-    <p>Ubicación: Argentina</p>
-</section>
-
-<footer>
-    <p>&copy; 2024 WebCity. Todos los derechos reservados.</p>
-</footer>
-
-</body>
+        </style>
+    </head>
+    <body>
+        <header>
+            <div> 
+                <nav>
+                    <a href="#Guide" id="action" role="guide">¿Dondé empezar?</a>
+                    <a href="#Prices">Precios</a>
+                    <a href="#Contact">Contacto</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h1>Tu web, nuestra pasion</h1>
+            <section>
+                <h2>Brindamos todos los servicios para que tengas tu pagina web</h2>
+            </section>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
 </html>
