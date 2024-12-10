@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -103,3 +104,110 @@ footer {
         width: 90%;
     }
 }
+=======
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #35312B;
+    color: white;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    transition: background 0.3s;
+}
+
+header nav a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+/* Espaciador para mayor separación entre header y contenido */
+.spacer {
+    height: 800px; /* Mucho más espacio entre el header y los planes */
+}
+
+/* Planes */
+#plans {
+    text-align: center;
+    padding: 2rem;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem; /* Planes más pegados */
+}
+
+.plan {
+    background: #35312B;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 16%; /* Cuadrados un poco menos anchos */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.plan h3 {
+    margin-bottom: 1rem;
+}
+
+.plan h3.green {
+    color: #4CAF50; /* Verde para los títulos de los planes */
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan ul li {
+    margin: 0.5rem 0;
+}
+
+/* Sobre Nosotros y Contacto */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .plan-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 90%;
+    }
+}
+>>>>>>> bb5f4afb525df3d2d22c9eb11453eafa1ecc3d6e
