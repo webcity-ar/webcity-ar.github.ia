@@ -1,47 +1,90 @@
 <!DOCTYPE html>
-<html> 
-    <head> 
-        <meta charset="utf-8"> <!-- codificacion -->
-        <meta name="viewport" content="width=device-width"> <!-- Adapta el ancho del dispositivo con el ancho de la web (responsive web design) -->
-        <title>Webcity | Creamos, gestionamos y mantenemos paginas web</title>
-        <meta name="descripcion" content="Ofrecemos servicios de creacion, gestion, mantenimiento de paginas web con distintos planes para elegir"> 
+<html lang="es">
+<head> 
+    <meta charset="utf-8"> <!-- codificacion -->
+    <meta name="viewport" content="width=device-width"> <!-- Adapta el ancho del dispositivo con el ancho de la web (responsive web design) -->
+    <title>Webcity | Creamos, gestionamos y mantenemos paginas web</title>
+    <meta name="descripcion" content="Ofrecemos servicios de creacion, gestion, mantenimiento de paginas web con distintos planes para elegir"> 
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#8FD694">
+    <!-- OPEN GRAPH -->
+    <meta property="og:tittle" content="Webcity | Tener tu sitio web nunca fue tan facil">
+    <meta property="og:descripcion" content="Ofrecemos servicios de creacion, gestion, mantenimiento de paginas web con distintos planes para elegir">
+    <meta property="og:image" content="/IMAGES/Publi.png" />
+    <meta property="og:image:alt" content="Una fotografia de un par de mujeres explicando como hacer una pagina web"/>
+    <link rel="alternate" href="https://webcity.com.ar/es" hreflang="en"> <!-- SEO para encontrar la misma pagina pero con otra traduccion -->
+    <link rel="canonical" href="https://webcity.com.ar"> <!-- www.webcity.com.ar o webcity.com.ar -->
+    <link rel="icon" type="image/png" href="/IMAGES/logoconfondo.png">
+    
+    <!-- CSS links -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#plans">Planes</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+</header>
 
-        <meta name="robots" content="index, follow">
-        <meta name="theme-color" content="#8FD694">
+<!-- Espacio adicional entre header y sección de planes -->
+<div class="spacer"></div>
 
-        <!-- OPEN GRAPH-->
-        <meta property="og:tittle" content="Webcity | Tener tu sitio web nunca fue tan facil">
-        <meta property="og:descripcion" content="Ofrecemos servicios de creacion, gestion, mantenimiento de paginas web con distintos planes para elegir">
-        <meta property="og:image" content="/IMAGES/Publi.png" />
-        <meta property="og:image:alt" content="Una fotografia de un par de mujeres explicando como hacer una pagina web"/>
+<section id="plans">
+    <h2>Planes</h2>
+    <div class="plan-container">
+        <div class="plan">
+            <h3 class="green">Plan Básico</h3>
+            <ul>
+                <li>Hosting gratuito</li>
+                <li>Configuración de dominio propio</li>
+                <li>Web estática</li>
+                <li>Creación de página: $35.000</li>
+                <li>Mantenimiento: $8.000 (4 veces/mes)</li>
+            </ul>
+        </div>
+        <div class="plan">
+            <h3 class="green">Plan Intermedio</h3>
+            <ul>
+                <li>Hosting pago</li>
+                <li>Personalización de emails automáticos</li>
+                <li>Web dinámica</li>
+                <li>Seguimiento con Google Analytics 4</li>
+                <li>SEO personalizado</li>
+                <li>Creación de página: $90.000</li>
+                <li>Mantenimiento: $20.000 (8 veces/mes)</li>
+            </ul>
+        </div>
+        <div class="plan">
+            <h3 class="green">Plan Avanzado</h3>
+            <ul>
+                <li>Hosting pago</li>
+                <li>Web dinámica</li>
+                <li>Aplicaciones de dropshipping</li>
+                <li>Diseño flexible (HTML, CSS, JS)</li>
+                <li>Verificación en dos pasos</li>
+                <li>Creación de página: $140.000</li>
+                <li>Mantenimiento: $40.000 (12 veces/mes)</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-        <link rel="alternate" href="https://webcity.com.ar/es" hreflang="en"> <!-- SEO para encontrar la misma pagina pero con otra traduccion -->
-        <link rel="canonical" href="https://webcity.com.ar"> <!-- www.webcity.com.ar o webcity.com.ar -->
+<section id="about">
+    <h2>Sobre Nosotros</h2>
+    <p>En WebCity nos especializamos en diseñar y desarrollar sitios web adaptados a tus necesidades.</p>
+</section>
 
-        <link rel="icon" type="image/png" href="/IMAGES/logoconfondo.png">
-        
-        <style>
+<section id="contact">
+    <h2>Contacto</h2>
+    <p>Email: webcity.ar@gmail.com</p>
+    <p>Teléfono: +54-3416384936 / 3412159459</p>
+    <p>Ubicación: Argentina</p>
+</section>
 
-        </style>
-    </head>
-    <body>
-        <header>
-            <div> 
-                <nav>
-                    <a href="#Guide" id="action" role="guide">¿Dondé empezar?</a>
-                    <a href="#Prices">Precios</a>
-                    <a href="#Contact">Contacto</a>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <h1>Tu web, nuestra pasion</h1>
-            <section>
-                <h2>Brindamos todos los servicios para que tengas tu pagina web</h2>
-            </section>
-        </main>
-        <footer>
-            
-        </footer>
-    </body>
+<footer>
+    <p>&copy; 2024 WebCity. Todos los derechos reservados.</p>
+</footer>
+</body>
 </html>
